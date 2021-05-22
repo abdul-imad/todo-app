@@ -12,17 +12,17 @@ body {
 }
 
 .main-container {
-    height: 31rem;
+    height: 35rem;
     background-color: white;
-    width: 26rem;
+    width: 24rem;
     position: relative;
-    top: calc((100vh - 31rem) / 2);
-    left: calc((100% - 26rem) / 2);
+    top: calc((100vh - 35rem) / 2);
+    left: calc((100% - 24rem) / 2);
     border-radius: 10px;
     /* opacity: 0.6; */
-    box-shadow: -1px 1px 47px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: -1px 1px 47px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -1px 1px 47px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 12px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 1px 12px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 12px 0px rgba(0, 0, 0, 0.75);
 }
 
 .status {
@@ -33,10 +33,12 @@ body {
     height: 5rem;
     cursor: pointer;
 }
-.status h1{
+
+.status h1 {
     color: #e10c80;
     font-weight: 800;
 }
+
 .hoverr {
     width: 50%;
     height: 100%;
@@ -44,27 +46,31 @@ body {
 }
 
 .hoverr:hover {
-    background-color: #e3e3e3;
+    background-color: #e780b9;
 }
 
 .addBtn {
-    height: 2.8rem;
-    width: 2.8rem;
+    height: 4.2rem;
+    width: 4.2rem;
     color: #e10c80;
     background-color: #ffffff;
     border-radius: 50%;
     text-align: center;
-    padding-top: 8px;
     position: absolute;
-    font-size: 26px;
+    font-size: 2.5rem;
     /* top: -500px; */
-    left: 47%;
-    bottom: -20px;
-    cursor: pointer;
-    box-shadow: -1px 1px 47px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: -1px 1px 47px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -1px 1px 47px 0px rgba(0, 0, 0, 0.75);
+    left: calc((100% - 4.2rem) / 2);
 
+    cursor: pointer;
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.addBtn i {
+    position: relative;
+    top: calc((100% - 2.5rem) / 2);
 }
 
 .task-container {
@@ -84,6 +90,7 @@ body {
 .cross {
     cursor: pointer;
     color: #e10c80;
+    font-size: 1.5rem;
 }
 
 .task {
@@ -91,24 +98,26 @@ body {
     height: 50px;
     align-items: center;
     justify-content: space-evenly;
-    border-bottom: 2px solid black;
 }
 
-hr {
-    border-bottom: 2px solid black;
-    margin: 0;
+input[type=checkbox] {
+    transform: scale(2);
 }
 
 .task-desc {
-    width: 85%;
+    width: 80%;
     height: 2rem;
     font-size: 18px;
+    padding: 5px;
+    color: #6b6b6b;
+    border: 2px solid #000;
 }
 
 .task-input {
     position: absolute;
+    backdrop-filter: blur(100px);
     top: calc((100vh - 8rem) / 2);
-    left: calc((100% - 23rem) / 2);
+    left: calc((100vw - 23rem) / 2);
 
     box-shadow: -1px 1px 47px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: -1px 1px 47px 0px rgba(0, 0, 0, 0.75);
