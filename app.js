@@ -16,17 +16,18 @@ input.addEventListener("keydown", (e) => {
 		let taskVal = input.value;
 		let task = document.createElement("div");
 		task.setAttribute("class", "task");
-		task.setAttribute("contenteditable", "true");
+		// task.setAttribute("contenteditable", "true");
 		task.innerHTML = `<input type="checkbox" name="" id="checkbox">
-        <div class="task-desc">
+        <div class="task-desc" contenteditable="true">
             ${taskVal}
         </div>
-
         <i class="fas fa-times cross"></i>`;
+        // const taskDesc = document.querySelector(".task-desc");
 		taskContainer.appendChild(task);
 		input.style.display = "none";
 		mainContainer.style.opacity = 1;
 		input.value = "";
+        taskDesc.contentEditable = true;
 	}
 });
 

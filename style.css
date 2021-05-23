@@ -37,6 +37,8 @@ body {
 .status h1 {
     color: #e10c80;
     font-weight: 800;
+    font-size: 28px;
+    font-family: 'Merriweather', serif;
 }
 
 .hoverr {
@@ -63,9 +65,13 @@ body {
 
     cursor: pointer;
     box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    /* -webkit-box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75); */
 
+}
+
+.addBtn:hover{
+    box-shadow: -1px 1px 12px 0px rgba(0, 0, 0, 0.75);
 }
 
 .addBtn i {
@@ -107,10 +113,12 @@ input[type=checkbox] {
 .task-desc {
     width: 80%;
     height: 2rem;
-    font-size: 18px;
+    font-size: 20px;
     padding: 5px;
-    color: #6b6b6b;
-    border: 2px solid #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #5c5c5c;
+    border: 2px solid rgb(65, 65, 65);
+    border-radius: 10px;
 }
 
 .task-input {
@@ -128,7 +136,8 @@ input[type=checkbox] {
     height: 8rem;
     width: 23rem;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
     border: none;
     padding: 10px;
